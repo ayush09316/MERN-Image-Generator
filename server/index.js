@@ -9,7 +9,9 @@ const Port=8080;
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin:'https://dalle-e-image-generator.netlify.app',
+}));
 app.use(express.json({ limit: '50mb' }));
 // const stripe=require('stripe')(process.env.STRIPE_PRIVATE_KEY)
 
