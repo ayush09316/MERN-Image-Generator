@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+    .card:nth-child(7n + 1) {
+        grid-column: auto/span 2;
+        grid-row: auto/span 2;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(205, 198, 231);
+}
+::-webkit-scrollbar-corner{
+    border-radius: 5px;
+    height: auto;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6469ff;
+  border-radius: 5px;
+}
